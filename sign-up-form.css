@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "MyCustomeFont";
+  src: url("fonts/Norsebold.otf") format("opentype");
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "inter", sans-serif;
+}
+
+.left {
+  position: relative;
+  background: url(assets/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  height: 100vh;
+}
+
+.transparent {
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  top: 17vh;
+  padding: 20px 0;
+}
+
+img[src*="lined"] {
+  width: 5rem;
+}
+
+.odin {
+  font-family: "MyCustomeFont", sans-serif;
+  color: white;
+  font-size: 5rem;
+  overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.right {
+  width: 70%;
+  background-color: #f9fafb;
+}
+
+.firstP {
+  margin: 75px 40px 50px;
+}
+
+.bold-one {
+  font-weight: bold;
+  line-height: 1.4rem;
+  width: 70%;
+}
+
+form {
+  background-color: white;
+  padding: 20px 40px;
+  box-shadow: 1px 3px 5px grey;
+  margin-bottom: 50px;
+}

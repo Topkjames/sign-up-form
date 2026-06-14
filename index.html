@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="sign-up-form.css" />
+  </head>
+  <body>
+    <div class="left">
+      <div class="transparent">
+        <img
+          src="/assets/odin-lined.png"
+          alt="white ODIN logo with a transparent background"
+        />
+        <p class="odin">ODIN</p>
+      </div>
+
+      <figcaption class="footer">
+        Photo by <span class="underlined">Halie West</span> on
+        <span class="underlined">Unsplash</span>
+      </figcaption>
+    </div>
+
+    <div class="right">
+      <div class="firstP">
+        <p class="bold-one">
+          This is not a real online service! you know you need something like
+          this in your life to help you realize your deepest dream. <br />Sign
+          Up <i>Now</i> to get started
+        </p>
+        <p class="bold-one">You <i>know</i> you want to.</p>
+      </div>
+
+      <form class="for-form" action="#" method="post">
+        <p class="bold-one">let's do this!</p>
+
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" name="first-name" id="first-name" />
+
+        <label for="last-name">LAST NAME</label>
+        <input type="text" name="last-name" id="last-name" required />
+
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="phone-number">PHONE NUMBER</label>
+        <input type="tel" name="tel" id="phone-number" required />
+
+        <label for="password">PASSWORD</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          maxlength="20"
+          required
+        />
+
+        <label for="confirm-password">CONFIRM PASSWORD</label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          minlength="8"
+          maxlength="20"
+          required
+        />
+      </form>
+
+      <button type="submit">Create Account</button>
+
+      <p>Already have an account? <span class="green">Log in</span></p>
+    </div>
+  </body>
+</html>

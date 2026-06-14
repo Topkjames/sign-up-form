@@ -29,48 +29,64 @@
           this in your life to help you realize your deepest dream. <br />Sign
           Up <i>Now</i> to get started
         </p>
+
         <p class="bold-one">You <i>know</i> you want to.</p>
       </div>
 
-      <form class="for-form" action="#" method="post">
-        <p class="bold-one">let's do this!</p>
+      <div class="container">
+        <p class="bold-one">Let's do this!</p>
+        <form id="sign-up-form" class="for-form" action="#" method="post">
+          <div class="con">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required />
+          </div>
 
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" id="first-name" />
+          <div class="con">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" required />
+          </div>
 
-        <label for="last-name">LAST NAME</label>
-        <input type="text" name="last-name" id="last-name" required />
+          <div class="con">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required />
+          </div>
 
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email" required />
+          <div class="con">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="tel" id="phone-number" required />
+          </div>
 
-        <label for="phone-number">PHONE NUMBER</label>
-        <input type="tel" name="tel" id="phone-number" required />
+          <div class="con">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </div>
 
-        <label for="password">PASSWORD</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          minlength="8"
-          maxlength="20"
-          required
-        />
+          <div class="con">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </div>
+        </form>
+      </div>
 
-        <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input
-          type="password"
-          name="confirm-password"
-          id="confirm-password"
-          minlength="8"
-          maxlength="20"
-          required
-        />
-      </form>
+      <button type="submit" form="sign-up-form">Create Account</button>
 
-      <button type="submit">Create Account</button>
-
-      <p>Already have an account? <span class="green">Log in</span></p>
+      <p class="login">
+        Already have an account? <span class="green">Log in</span>
+      </p>
     </div>
   </body>
 </html>

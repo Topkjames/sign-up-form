@@ -52,7 +52,7 @@ img[src*="lined"] {
   color: white;
   width: 100%;
   left: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -75,9 +75,77 @@ img[src*="lined"] {
   width: 70%;
 }
 
-form {
+.container {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  padding: 20px 40px;
+  padding: 15px 40px;
   box-shadow: 1px 3px 5px grey;
   margin-bottom: 50px;
+}
+
+.bold-one:last-of-type {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 550px;
+  column-gap: 50px;
+  row-gap: 15px;
+}
+
+.con {
+  flex: 1 1 calc(40% - 20px);
+  max-width: 240px;
+  margin: 10px 0;
+  padding-right: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+}
+
+input {
+  width: 100%;
+  border: 1px solid grey;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
+input:user-valid {
+  border-color: green;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+button {
+  margin-left: 40px;
+  padding: 10px 20px;
+  background-color: #596d48;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.login {
+  margin-left: 40px;
+}
+
+.green {
+  color: #596d48;
+  font-weight: 700;
 }
